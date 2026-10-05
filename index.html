@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voya | A quieter way to travel</title>
+  <meta name="description" content="Voya is a demo membership card site built for learning.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- 1. NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">VOYA</a>
+    <nav id="menu" class="nav__links" aria-label="Main">
+      <a href="#concierge">Membership</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="btn btn--sm" data-open-modal>Apply</button>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. HERO -->
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1518860308377-800f02d5498a?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="high" decoding="async">
+      </div>
+      <h1 class="reveal">Made for<br>global living</h1>
+      <button class="btn" data-open-modal>Apply for access</button>
+      <ul class="clocks" aria-label="World clocks">
+        <li><span data-tz="Europe/London"></span> London</li>
+        <li><span data-tz="Asia/Dubai"></span> Dubai</li>
+        <li><span data-tz="America/New_York"></span> New York</li>
+        <li><span data-tz="Australia/Sydney"></span> Sydney</li>
+      </ul>
+    </section>
+
+    <!-- 3. INTRO + TOASTS -->
+    <section class="intro">
+      <h2 class="reveal">Infrastructure for how you move</h2>
+      <p class="reveal">At home, abroad and everywhere between, Voya gives members a calmer way to travel.</p>
+      <div class="toasts" aria-hidden="true">
+        <span class="toast">✓ Payment complete</span>
+        <span class="toast">✓ Hotel booked</span>
+        <span class="toast">✓ Flight booked</span>
+      </div>
+    </section>
+
+    <!-- 4. MARQUEE -->
+    <section class="spend">
+      <h2 class="reveal">Spend globally. Zero fees built in.</h2>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>¥20,000</span><span>CHF 40,000</span><span>£15,000</span><span>₩22,000</span>
+          <span>€12,500</span><span>₺28,000</span><span>¥20,000</span><span>CHF 40,000</span>
+          <span>£15,000</span><span>₩22,000</span><span>€12,500</span><span>₺28,000</span>
+        </div>
+      </div>
+      <ul class="tags">
+        <li>Frictionless</li><li>One system</li><li>Global spend</li>
+      </ul>
+    </section>
+
+    <!-- 5. CONCIERGE -->
+    <section class="concierge" id="concierge">
+      <div class="concierge__text reveal">
+        <p class="big-number" data-count="24">0</p><span class="big-suffix">/7</span>
+        <h2>Concierge. Anything. Anytime.</h2>
+        <p>Every membership includes a dedicated concierge, ready whenever you are.</p>
+      </div>
+      <div class="cards">
+        <div class="card card--a reveal"><span>Premium card</span></div>
+        <div class="card card--b reveal"><span>Private access</span></div>
+      </div>
+    </section>
+
+    <!-- 6. BENEFITS -->
+    <section class="benefits" id="benefits">
+      <h2 class="reveal">Made for the places you already go.</h2>
+      <div class="benefits__grid">
+        <ol class="benefits__list">
+          <li class="active" data-img="0"><b>01</b><h3>Hotels</h3><p>Preferred stays and member rates.</p></li>
+          <li data-img="1"><b>02</b><h3>Dining</h3><p>Tables and moments at partner restaurants.</p></li>
+          <li data-img="2"><b>03</b><h3>Travel</h3><p>Perks designed around moving between cities.</p></li>
+          <li data-img="3"><b>04</b><h3>Experiences</h3><p>Selected access to culture and events.</p></li>
+          <li data-img="4"><b>05</b><h3>Wellness</h3><p>Spaces for recovery and balance.</p></li>
+        </ol>
+        <div class="benefits__imgs">
+          <figure class="ph ph--0 show"><img src="https://images.unsplash.com/photo-1552858725-2758b5fb1286?auto=format&fit=crop&w=1400&q=80" alt="Dimly lit luxury hotel bedroom with a glowing bedside lamp" loading="lazy" decoding="async"></figure>
+          <figure class="ph ph--1"><img src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=1400&q=80" alt="Elegant restaurant interior with warm, moody lighting" loading="lazy" decoding="async"></figure>
+          <figure class="ph ph--2"><img src="https://images.unsplash.com/photo-1625513123245-fcb02d69ad12?auto=format&fit=crop&w=1400&q=80" alt="Private jet cabin with tan quilted leather seats" loading="lazy" decoding="async"></figure>
+          <figure class="ph ph--3"><img src="https://images.unsplash.com/photo-1559385301-0187cb6eff46?auto=format&fit=crop&w=1400&q=80" alt="Luxury yacht on the water" loading="lazy" decoding="async"></figure>
+          <figure class="ph ph--4"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1400&q=80" alt="Hot stone massage in a calm spa setting" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. NETWORK CTA -->
+    <section class="network">
+      <div class="network__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?auto=format&fit=crop&w=2000&q=80" alt="" loading="lazy" decoding="async">
+      </div>
+      <h2 class="reveal">Access our network</h2>
+      <p class="reveal">Preferred rates and special experiences across hundreds of partners.</p>
+      <button class="btn" data-open-modal>Apply for access</button>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="faq" id="faq">
+      <h2 class="reveal">Frequently asked questions</h2>
+      <div class="faq__list">
+        <details><summary>What is Voya?</summary><p>Voya is a made-up membership brand used for this learning project. Nothing here is a real financial product.</p></details>
+        <details><summary>How much does membership cost?</summary><p>This demo uses placeholder pricing: $200 a year or $20 a month.</p></details>
+        <details><summary>How do I apply?</summary><p>Press any "Apply" button, enter your email and join the demo waiting list.</p></details>
+        <details><summary>Is my data stored?</summary><p>No. The form only simulates a submission in your browser.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <h2>A quieter way to move through the world</h2>
+    <button class="btn" data-open-modal>Apply for access</button>
+    <div class="footer__cols">
+      <div><h4>Explore</h4><a href="#concierge">Card</a><a href="#benefits">Benefits</a><a href="#faq">FAQ</a></div>
+      <div><h4>Contact</h4><a href="mailto:hello@example.com">hello@example.com</a><span>Available 24/7</span></div>
+      <div><h4>Legal</h4><a href="#">Terms</a><a href="#">Privacy</a></div>
+    </div>
+    <p class="footer__small">© 2026 Voya demo. A learning project. Photos from Unsplash: Jp Valery, Louis Hansel, Yaroslav Muzychenko, Danilo Capece, engin akyurt, Ishan, Chelsea Gates.</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__box">
+      <button class="modal__close" id="modal-close" aria-label="Close">×</button>
+      <h2 id="modal-title">Get early access</h2>
+      <form id="form" novalidate>
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit">Join the list</button>
+        <p class="form__msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
